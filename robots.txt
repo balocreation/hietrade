@@ -1,0 +1,5 @@
+#robots.txt for https://hietrade.com/
+
+User-agent: *
+Disallow: 
+Sitemap: https://hietrade.com/sitemap.xml

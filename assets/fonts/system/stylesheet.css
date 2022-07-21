@@ -1,0 +1,23 @@
+@font-face {
+    font-family: 'Hietrade UI';
+    src: url('GoldplayAlt-SemiBold.eot');
+    src: local('Goldplay Alt SemiBold'), local('GoldplayAlt-SemiBold'),
+        url('GoldplayAlt-SemiBold.eot?#iefix') format('embedded-opentype'),
+        url('GoldplayAlt-SemiBold.woff2') format('woff2'),
+        url('GoldplayAlt-SemiBold.woff') format('woff'),
+        url('GoldplayAlt-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Hietrade UI';
+    src: url('GoldplayAlt-Bold.eot');
+    src: local('Goldplay Alt Bold'), local('GoldplayAlt-Bold'),
+        url('GoldplayAlt-Bold.eot?#iefix') format('embedded-opentype'),
+        url('GoldplayAlt-Bold.woff2') format('woff2'),
+        url('GoldplayAlt-Bold.woff') format('woff'),
+        url('GoldplayAlt-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}

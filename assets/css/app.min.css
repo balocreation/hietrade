@@ -1,0 +1,708 @@
+/*-----------------------------------------------------------------------------------
+    Template Name: Hietrade
+    Template URI: https://boastack.com/
+    Description: A better way to trade your crytpocurrency.
+    Author: Boastack
+    Author URI: https://boastack.com/
+    Version: 1.0
+-----------------------------------------------------------------------------------*/
+@import url('../fonts/system/stylesheet.css');
+@import url('../fonts/moderat/stylesheet.css');
+/*----------------------------------------*/
+/*  1. Theme Default
+/*----------------------------------------*/
+:root {
+    --bs-blue: #0d60d8;
+    --bs-indigo: #6610f2;
+    --bs-purple: #6f42c1;
+    --bs-pink: #d63384;
+    --bs-red: #dc3545;
+    --bs-orange: #fd7e14;
+    --bs-yellow: #ffc107;
+    --bs-green: #198754;
+    --bs-teal: #20c997;
+    --bs-cyan: #0dcaf0;
+    --bs-white: #ffffff;
+    --bs-gray: #6d747c;
+    --bs-gray-dark: #3d4651;
+    --bs-primary: #0d60d8;
+    --bs-secondary: #083e9e;
+    --bs-success: #198754;
+    --bs-info: #0dcaf0;
+    --bs-warning: #ffc107;
+    --bs-danger: #dc3545;
+    --bs-light: #e7effb;
+    --bs-dark: #0c1825;
+    --bs-primary-rgb: 13, 96, 216;
+    --bs-secondary-rgb: 8, 62, 158;
+    --bs-success-rgb: 25, 135, 84;
+    --bs-info-rgb: 13, 202, 240;
+    --bs-warning-rgb: 255, 193, 7;
+    --bs-danger-rgb: 220, 53, 69;
+    --bs-light-rgb: 231, 239, 251;
+    --bs-dark-rgb: 12, 24, 37;
+}
+body {
+    font-size: 1rem;
+    line-height: 1.625rem;
+    color: var(--bs-gray);
+	background: var(--bs-white);
+    font-family: 'Moderat', sans-serif;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+a {
+    cursor: pointer;
+    text-decoration: none;
+}
+.h1, .h2, .h3, .h4, .h5, .h6, 
+h1, h2, h3, h4, h5, h6 {
+    color: var(--bs-dark);
+    font-weight: 600;
+    font-family: 'Hietrade UI', sans-serif;
+}
+.xl-padding {
+    padding: 5rem 0;
+}
+.transparent {
+    background: transparent;
+}
+.font-size-14 {
+    font-size: 0.875rem;
+}
+.font-size-18 {
+    font-size: 1.125rem;
+}
+.has-shadow {
+    box-shadow: 0 0.375rem 1.5rem 0 rgba(140, 152, 164, 0.15);
+}
+.rounded-10 {
+    border-radius: 0.625rem;
+}
+.rounded-20 {
+    border-radius: 1.25rem;;
+}
+.section-heading {
+    font-size: 2.75rem;
+}
+.section-subheading {
+    margin-bottom: 3rem;
+}
+.avatar-circle {
+    height: 3rem;
+    width: 3rem;
+}
+.btn-primary,
+.btn-secondary,
+.btn-success
+.btn-info
+.btn-warning
+.btn-danger
+.btn-light
+.btn-dark {
+    border-radius: 0.625rem;
+    padding: 0.85rem 2rem;
+    box-shadow: none !important;
+    transition: all 0.3s ease-in-out;
+}
+.btn-primary {
+    background-color: var(--bs-primary);
+    border-color: var(--bs-primary);
+}
+.btn-primary:hover, 
+.btn-primary:focus, 
+.btn-primary:active {
+    background-color: var(--bs-dark);
+    border-color: var(--bs-dark);
+}
+.btn-secondary {
+    background-color: var(--bs-secondary);
+    border-color: var(--bs-secondary);
+}
+.btn-secondary:hover, 
+.btn-secondary:focus, 
+.btn-secondary:active {
+    background-color: var(--bs-dark);
+    border-color: var(--bs-dark);
+}
+.btn-success {
+    background-color: var(--bs-success);
+    border-color: var(--bs-success);
+}
+.btn-success:hover, 
+.btn-success:focus, 
+.btn-success:active {
+    background-color: var(--bs-dark);
+    border-color: var(--bs-dark);
+}
+.btn-info {
+    background-color: var(--bs-info);
+    border-color: var(--bs-info);
+}
+.btn-info:hover, 
+.btn-info:focus, 
+.btn-info:active {
+    background-color: var(--bs-primary);
+    border-color: var(--bs-primary);
+}
+.btn-warning {
+    background-color: var(--bs-warning);
+    border-color: var(--bs-warning);
+}
+.btn-warning:hover, 
+.btn-warning:focus, 
+.btn-warning:active {
+    background-color: var(--bs-danger);
+    border-color: var(--bs-danger);
+}
+.btn-danger {
+    background-color: var(--bs-danger);
+    border-color: var(--bs-danger);
+}
+.btn-danger:hover, 
+.btn-danger:focus, 
+.btn-danger:active {
+    background-color: var(--bs-warning);
+    border-color: var(--bs-warning);
+}
+.btn-light {
+    background-color: var(--bs-light);
+    border-color: var(--bs-light);
+}
+.btn-light:hover, 
+.btn-light:focus, 
+.btn-light:active {
+    color: #ffffff;
+    background-color: var(--bs-dark);
+    border-color: var(--bs-dark);
+}
+.btn-dark {
+    background-color: var(--bs-dark);
+    border-color: var(--bs-dark);
+}
+.btn-dark:hover, 
+.btn-dark:focus, 
+.btn-dark:active {
+    color: var(--bs-dark);
+    background-color: var(--bs-light);
+    border-color: var(--bs-light);
+}
+.pattern {
+    position: absolute;
+    opacity: 1;
+    background-size: 1rem 1rem;
+    background-image: radial-gradient(rgba(13, 96, 216, 0.95) 15%, transparent 0), radial-gradient(rgba(13, 96, 216, 0.95) 15%, transparent 0);
+}
+.pattern-1 {
+    top: -3.75rem;
+    left: 3.75rem;
+    height: 6.25rem;
+    width: 6.25rem;
+}
+.pattern-2 {
+    top: -3.75rem;
+    right: 3.75rem;
+    height: 6.25rem;
+    width: 6.25rem;
+}
+/*----------------------------------------*/
+/*  2. Header Menu
+/*----------------------------------------*/
+.header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+.header .navbar {
+    padding: 1rem 0;
+}
+.header .navbar-brand {
+    margin-right: 2rem;
+}
+.header .navbar-brand svg {
+    max-width: 11.25rem;
+}
+.header .navbar-nav .nav-item .nav-link {
+    color: var(--bs-white);
+    padding: 1rem 1.5rem;
+    text-transform: capitalize;
+}
+.header .navbar-nav .nav-item .nav-link:hover,
+.header .navbar-nav .nav-item .nav-link:focus, 
+.header .navbar-nav .nav-item .nav-link.active {
+	color: var(--bs-white);
+}
+.header .navbar-nav .nav-item .nav-link .nav-mask {
+    padding: 0;
+    height: 1.25rem;
+    position: relative;
+    overflow: hidden;
+}
+.header .navbar-nav .nav-item .nav-link .nav-container {
+    transition: all 0.5s ease-in-out;
+}
+.header .navbar-nav .nav-item .nav-link .nav-text {
+    display: block;
+    font-size: 1rem;
+    line-height: 1rem;
+    transition: all 0.5s ease-in-out;
+}
+.header .navbar-nav .nav-item .nav-link .nav-label {
+    margin-bottom: 0.25rem;
+    transform-origin: right center;
+}
+.header .navbar-nav .nav-item .nav-link .nav-hover {
+    transform-origin: left center;
+    transform: rotate(20deg);
+}
+.header .navbar-nav .nav-item .nav-link:hover .nav-container {
+    transform: translateY(-1.25rem);
+}
+.header .navbar-nav .nav-item .nav-link:hover .nav-label {
+    transform: rotate(20deg);
+}
+.header .navbar-nav .nav-item .nav-link:hover .nav-hover {
+    transform: rotate(0);
+}
+.header .navbar-dark .navbar-toggler {
+    background: transparent;
+    border: none;
+    box-shadow: none;
+}
+.header .navbar-nav .nav-item .btn-navbar:hover, 
+.header .navbar-nav .nav-item .btn-navbar:focus, 
+.header .navbar-nav .nav-item .btn-navbar:active {
+    color: var(--bs-dark);
+    background-color: var(--bs-white);
+    border-color: var(--bs-white);
+}
+/*----------------------------------------*/
+/*  3. Hero Area
+/*----------------------------------------*/
+.hero-section {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url('../images/hero.png') no-repeat center center / cover;
+    position: relative;
+}
+.hero-section .hero-heading { 
+    font-size: 3.875rem;
+    font-weight: 600; 
+    color: var(--bs-white);
+}
+.hero-section .hero-subheading {
+    margin-bottom: 15rem;
+}
+.hero-section .hero-svg {
+    min-width: 80%;
+}
+.hero-section .hero-desktop {
+    width: 36rem;
+    height: 36rem;
+    bottom: 0;
+}
+.hero-section .hero-mobile {
+    width: 20rem;
+    height: 20rem;
+    bottom: 0;
+}
+/*----------------------------------------*/
+/*  4. About
+/*----------------------------------------*/
+.about-section .card {
+    padding: 1rem 0;
+}
+.about-section .card-light {
+    background: var(--bs-light);
+}
+/*----------------------------------------*/
+/*  5. Features
+/*----------------------------------------*/
+.features-section .card {
+    padding: 1rem 0;
+}
+.features-section .card-light {
+    background: var(--bs-light);
+}
+/*----------------------------------------*/
+/*  6. Spotlight
+/*----------------------------------------*/
+.spotlights .spotlight {
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}  
+.spotlights .spotlight .spotlight-wrapper {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: max-content;
+}
+.spotlights .spotlight .spotlight-wrapper.cloned {
+    position: absolute;
+    top: 0rem;
+    left: 0rem;
+}
+.spotlights .spotlight .spotlight-wrapper .spotlight-slide {
+    width: 24rem; 
+    height: fit-content;
+    margin-right: 2.5rem;
+    margin-bottom: 1rem;
+}
+.spotlights .spotlight .spotlight-wrapper .spotlight-slide .card{
+    position: relative;
+    border: 2px solid var(--bs-light);
+}
+.spotlights .spotlight .spotlight-wrapper .spotlight-slide .card::after {
+    content: "";
+    position: absolute;
+    background: var(--bs-light);
+    border-radius: 0.625rem;
+    height: 100%;
+    right: 0.625rem;
+    left: 0.625rem;
+    bottom: -0.5rem;
+    z-index: -1;
+}
+.spotlights .spotlight .spotlight-wrapper .spotlight-slide .card-body {
+    padding: 1.875rem;
+}
+.spotlight-prev,
+.spotlight-next {
+    width: 2.5rem;
+    height: 2.5rem;
+    color: var(--bs-primary);
+    background: var(--bs-light);
+    border-color: var(--bs-light);
+}
+.spotlight-prev:focus,
+.spotlight-next:focus,
+.spotlight-prev:hover,
+.spotlight-next:hover {
+    color: var(--bs-white);
+    background: var(--bs-primary);
+    border-color: var(--bs-primary);
+}
+/*----------------------------------------*/
+/*  7. FAQs
+/*----------------------------------------*/
+.faqs .faqs-sticky .faqs-mask {
+	width: 100%;
+	height: auto;
+	overflow: hidden;
+    clip-path: circle(30.0% at 50% 50%);
+    /* clip-path: polygon(30% 30%, 70% 30%, 70% 70%, 30% 70%); */
+}
+.faqs .faqs-sticky .faqs-mask .faqs-img {
+	width: 100%;
+	height: auto;
+}
+.faqs .faqs-wrapper .faqs-number {
+    font-size: 2rem;
+    color: var(--bs-dark);
+}
+/*----------------------------------------*/
+/*  8. Downloads
+/*----------------------------------------*/
+.download .download-banner {
+    display: flex;
+    justify-content: center;
+    background: url('../images/banner.png') no-repeat center center / cover;
+}
+.download .download-banner .card-body {
+    padding: 2.5rem;
+}
+.download .download-heading {
+    font-size: 2.25rem;
+}
+.download .download-subheading {
+    margin-bottom: 3rem;
+    max-width: 26.25rem;
+}
+.download .download-button {
+    display: inline-flex;
+}
+.download .download-content {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    margin-bottom: -2.5rem;
+    margin-right: -3rem;
+}
+.download .download-img {
+    width: 16.5rem;
+    height: 16.5rem;
+}
+/*----------------------------------------*/
+/*  9. Footer
+/*----------------------------------------*/
+.footer {
+    background: var(--bs-white);
+}
+.footer .footer-space {
+    padding: 4rem 0 3rem;
+}
+.footer .footer-widget .widget-heading {
+    display: block;
+    font-size: 1.125rem;
+    font-weight: bold;
+    font-family: 'Moderat', sans-serif;
+    text-transform: capitalize;
+    margin-bottom: 1rem;
+}
+.footer .footer-widget .list-unstyled {
+    margin-bottom: 0;
+}
+.footer .footer-widget .nav-item:not(:last-child) {
+    padding-bottom: 0.25rem;
+}
+.footer .footer-widget .nav-item .nav-link {
+    color: var(--bs-dark);
+    font-size: 0.875rem;
+    padding: 0.5rem 0;
+}
+.footer .footer-border {
+    width: 100%;
+    position: relative;
+    border-color: rgb(206, 209, 211);
+}
+.footer .copyright {
+    padding: 1.875rem 0;
+    font-size: 0.85rem;
+}
+.footer .socials .socials-item {
+    display: inline-flex;
+}
+.footer .socials .socials-item:not(:last-child) {
+    margin-right: 0.5rem;
+}
+.footer .socials .socials-item .btn-social {
+    width: 2.5rem;
+    height: 2.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--bs-light);
+    border-color: var(--bs-light);
+}
+.footer .socials .socials-item .btn-social:focus,
+.footer .socials .socials-item .btn-social:hover {
+    background: var(--bs-primary);
+    border-color: var(--bs-primary);
+}
+.footer .socials .socials-item .btn-social svg {
+    width: 18px;
+    height: 18px;
+}
+.footer .socials .socials-item .btn-social:hover svg{
+    filter: invert(1);
+}
+/*----------------------------------------*/
+/*  10. Miscellaneous
+/*----------------------------------------*/
+.overlay {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    width: 100%;
+}
+.overlay .layer {
+    flex: 0 0 auto;
+    height: 100vh;
+    width: 33.33333333%;
+    z-index: 99;
+}
+.overlay .layer.animatex {
+    background: #041e4d;
+}
+.overlay .layer.animatey {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #041e4d;
+}
+.overlay .layer.animatez {
+    background: #041e4d;
+}
+.overlay .layer-heading {
+    font-size: 3rem;
+    font-weight: 600;
+    font-family: 'Hietrade UI', sans-serif;
+}
+.notify .alert {
+    position: fixed;
+    right: 3rem;
+    bottom: 2rem;
+    width: 30.25rem;
+    height: fit-content;
+    z-index: 999;
+}
+.cursor {
+    position: fixed;
+    width: 1.5rem;
+    height: 1.5rem;
+    top: -1rem;
+    left: -1rem;
+    border-radius: 100%;
+    border: 2px solid var(--bs-secondary);
+    pointer-events: none;
+    z-index: 99999;
+}
+/* .cursor-interaction {
+    position: fixed;
+    border: 3px solid var(--bs-white);
+    width: 42px;
+    height: 42px;
+    left: -22px;
+    top: -22px;
+    border-radius: 100%;
+    user-select: none;
+    mix-blend-mode: difference;
+    pointer-events: none;
+} */
+/*----------------------------------------*/
+/*  11. Responsiveness
+/*----------------------------------------*/
+@media only screen and (max-width: 1024px) {
+    .hero-section .hero-svg {
+        max-width: 80%;
+    }
+}
+@media only screen and (max-width: 991px) {
+    .header .navbar-bg {
+        padding-bottom: 2.5rem;
+        background: #041e4d;
+    }
+    .header .navbar .btn-navbar {
+        display: inline-block;
+        margin: 1rem 1.5rem 0;
+    }
+    .header .navbar .navbar-nav {
+        align-items: flex-start !important;
+    }
+    .hero-section .hero-heading {
+        margin-bottom: 2rem !important;
+    }
+}
+@media only screen and (max-width: 767px) {
+    .overlay .layer-heading {
+        font-size: 2rem;
+    }
+    .hero-section .hero-heading {
+        font-size: 3rem;
+    }
+    .pattern-1 {
+        top: -2rem;
+        left: 2rem;
+        height: 6rem;
+        width: 6rem;
+    }
+    .pattern-2 {
+        top: -2rem;
+        right: 2rem;
+        height: 6rem;
+        width: 6rem;
+    }
+    .about-section, .download {
+        padding-bottom: 0 !important;
+    }
+    .faqs, .download {
+        padding-top: 0 !important;
+    }
+    .cursor {
+        display: none;
+    }
+}
+@media only screen and (max-width: 480px) {
+    .btn-primary,
+    .btn-secondary,
+    .btn-success
+    .btn-info
+    .btn-warning
+    .btn-danger
+    .btn-light
+    .btn-dark {
+        padding: 0.875rem 1.875rem !important;
+    }
+    .pattern-1 {
+        height: 5rem;
+        width: 5rem;
+    }
+    .pattern-2 {
+        height: 5rem;
+        width: 5rem;
+    }
+    .rounded-10 {
+        border-radius: 0.875rem;
+    }
+    .xl-padding {
+        padding: 4rem 0;
+    }
+    .hero-section .hero-heading {
+        font-size: 2.75rem;
+    }
+    .hero-section .hero-subheading {
+        font-size: 1rem;
+        margin-top: 1rem;
+    }
+    .hero-section .hero-img {
+        height: 20rem;
+        width: 20rem;
+    }
+    .section-heading {
+        font-size: 2rem;
+    }
+    .download .app-svg {
+        width: 8rem;
+    }
+    .footer .copyright {
+        text-align: center;
+    }
+    .footer .copyright .socials {
+        margin-top: 1rem !important;
+        text-align: center !important;
+    }
+}
+@media only screen and (max-width: 320px) {
+    .pattern-1 {
+        height: 4rem;
+        width: 4rem;
+    }
+    .pattern-2 {
+        height: 4rem;
+        width: 4rem;
+    }
+    .hero-section .hero-heading {
+        font-size: 2.25rem;
+    }
+    .hero-section .hero-subheading {
+        margin-bottom: 10rem;
+    }
+    .hero-section .hero-img {
+        height: 14rem;
+        width: 14rem;
+    }
+    .section-subheading {
+        margin-bottom: 2rem;
+    }
+    .about-section .card svg,
+    .features-section .card svg {
+        display: none;
+    }
+    .download .download-button {
+        display: block;
+        text-align: center;
+    }
+    .download .app-svg {
+        width: 100%;
+    }
+    .download .app-svg:first-child {
+        margin-bottom: 0.625rem;
+    }
+}
